@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>terra•sci | dark nature & science</title>
+  <!-- fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="smooth-wrapper">
+    <!-- fixed nav -->
+    <nav class="navbar">
+      <div class="logo"><i class="fas fa-leaf"></i> terra•sci</div>
+      <div class="nav-links">
+        <a href="#home">home</a>
+        <a href="#research">research</a>
+        <a href="#nature">nature</a>
+        <a href="#contact">contact</a>
+      </div>
+      <button class="menu-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">connect</button>
+    </nav>
+
+    <!-- hero / home -->
+    <section id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="chip"><i class="fas fa-dna" style="margin-right:8px;"></i> BIO-INSPIRED SCIENCE</span>
+          <h1>where nature <br> & discovery meet</h1>
+          <p>We fuse field ecology with molecular labs — studying life from rainforests to synthetic biology.</p>
+          <div class="btn-group">
+            <button class="btn-primary" onclick="alert('enter the biolab (demo)')"><i class="fas fa-flask"></i> explore lab</button>
+            <button class="btn-outline" onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'})"><i class="fas fa-arrow-down"></i> discover</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="orb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- research cards (science) -->
+    <section id="research" style="padding-top: 40px;">
+      <div class="container">
+        <h2 class="section-title">current missions</h2>
+        <p class="desc">Integrating field data with genomic analysis — from canopy isotopes to crispr circuits.</p>
+        <div class="card-grid">
+          <div class="sci-card" data-glow>
+            <div class="card-icon"><i class="fas fa-seedling"></i></div>
+            <h3>canopy lab</h3>
+            <p>Photosynthesis & drought response in old‑growth forests, monitored via drone spectrometry.</p>
+            <span class="tag">12 plots active</span>
+          </div>
+          <div class="sci-card" data-glow>
+            <div class="card-icon"><i class="fas fa-microscope"></i></div>
+            <h3>cryo‑micro</h3>
+            <p>Single‑cell proteomics of extremophiles discovered in volcanic springs.</p>
+            <span class="tag">new isolate</span>
+          </div>
+          <div class="sci-card" data-glow>
+            <div class="card-icon"><i class="fas fa-dragon"></i></div>
+            <h3>synthetic flora</h3>
+            <p>Engineering nitrogen‑fixing symbiosis in non‑legume crops.</p>
+            <span class="tag">greenhouse trial</span>
+          </div>
+          <div class="sci-card" data-glow>
+            <div class="card-icon"><i class="fas fa-cloud-moon"></i></div>
+            <h3>paleo‑climate</h3>
+            <p>Stable isotope analysis of ancient tree rings – 2000yr reconstruction.</p>
+            <span class="tag">nature geoscience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- full bleed nature image -->
+    <div class="image-break">
+      <h2>forest / lab / future</h2>
+    </div>
+
+    <!-- nature & science intersection (stats + feature) -->
+    <section id="nature" style="min-height: auto; padding: 80px 24px;">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">14k+</div>
+            <div class="stat-label">DNA samples</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">23</div>
+            <div class="stat-label">field stations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">publications ’26</div>
+          </div>
+        </div>
+
+        <!-- feature panel with real unsplash image -->
+        <div class="feature-panel">
+          <div class="feature-img">
+            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&auto=format&fit=crop" alt="mossy forest floor" loading="lazy">
+          </div>
+          <div class="feature-text">
+            <h3 style="color:#d5f7ec;">from soil to sequence</h3>
+            <p style="color:#b2dae5;">Our new metagenomics pipeline reveals cryptic fungal networks. Each sample is processed through portable nanopore sequencers directly in the rainforest.</p>
+            <button class="btn-primary" style="margin-top:20px;"><i class="fas fa-tree"></i> explore dataset</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact / footer area -->
+    <section id="contact" style="min-height: 50vh;">
+      <div class="container" style="text-align: center;">
+        <h2 class="section-title">collaborate with us</h2>
+        <p style="max-width: 600px; margin: 0 auto 40px;">field ecologists, molecular biologists, data scientists — we are open for joint expeditions and lab exchange.</p>
+        <button class="btn-primary" onclick="alert('demo: open contact form')"><i class="fas fa-paper-plane"></i> send message</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="col">
+          <div class="logo" style="font-size:2rem;"><i class="fas fa-leaf"></i> terra•sci</div>
+          <p>exploring life at all scales · integrative research institute</p>
+        </div>
+        <div class="col">
+          <strong style="color:#b8e3d4;">locations</strong>
+          <p>amazon field hub · karst lab slovenia · marine station borneo</p>
+        </div>
+        <div class="col social">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 terra•sci — dark nature / science template • all imagery unsplash
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
