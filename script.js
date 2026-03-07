@@ -1,5 +1,4 @@
 (function() {
-    // smooth scrolling is native via CSS, we also add a small glow interaction
     const cards = document.querySelectorAll('[data-glow]');
     cards.forEach(card => {
     card.addEventListener('mousemove', function(e) {
@@ -11,7 +10,6 @@
     });
     });
 
-    // optional: active link highlight while scrolling (simple)
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -32,8 +30,6 @@
         }
     });
     });
-
-    // progressive loading feel (no extra)
 })();
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
