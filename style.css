@@ -31,13 +31,11 @@ body {
   background: #5f8b9c;
 }
 
-/* smooth scroll container */
 .smooth-wrapper {
   position: relative;
   width: 100%;
 }
 
-/* navigation — floating minimal */
 .navbar {
   position: fixed;
   top: 24px;
@@ -129,7 +127,6 @@ body {
   color: white;
 }
 
-/* sections */
 section {
   min-height: 100vh;
   padding: 100px 24px 60px;
@@ -144,7 +141,6 @@ section {
   margin: 0 auto;
 }
 
-/* hero */
 .hero-grid {
   display: flex;
   align-items: center;
